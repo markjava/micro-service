@@ -1,4 +1,4 @@
-package com.micro.service;
+package com.micro.service.registry;
 
 /**
  * Hello world!
