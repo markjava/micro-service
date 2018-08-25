@@ -1,6 +1,7 @@
 package com.micro.service;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
@@ -10,6 +11,6 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 @EnableEurekaServer
 public class RegistryApplication {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        new SpringApplicationBuilder(RegistryApplication.class).run(args);
     }
 }

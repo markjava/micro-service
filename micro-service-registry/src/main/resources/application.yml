@@ -1,0 +1,26 @@
+####### 项目信息配置 ###########
+server :
+  port : 8888
+
+
+####### 日志配置 ##############
+
+
+
+
+
+###### 注册中心配置 ############
+eureka:
+  instance:
+    hostname : MICRO-SERVICE-REGISTRY
+  client :
+    register-with-eureka : false
+    fetch-registry : false
+    service-url :
+      defaultZone : http://${eureka.instance.hostname}:${server.port}/eureka/
+
+######## Spring配置 ############
+spring:
+  application:
+    name: MICRO-SERVICE-REGISTRY
+
