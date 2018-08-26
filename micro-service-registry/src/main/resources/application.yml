@@ -12,15 +12,15 @@ server :
 ###### 注册中心配置 ############
 eureka:
   instance:
-    hostname : MICRO-SERVICE-REGISTRY
-  client :
-    register-with-eureka : false
-    fetch-registry : false
-    service-url :
-      defaultZone : http://${eureka.instance.hostname}:${server.port}/eureka/
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
 ######## Spring配置 ############
 spring:
   application:
-    name: MICRO-SERVICE-REGISTRY
+    name: ${eureka.instance.hostname}
 

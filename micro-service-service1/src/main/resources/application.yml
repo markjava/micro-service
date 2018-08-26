@@ -1,0 +1,16 @@
+######## 工程配置 ##############
+server:
+  port: 7000
+spring:
+  application:
+    name: SERVICE
+eureka:
+  instance:
+    hostname: ${spring.application.name}
+  client:
+    register-with-eureka : true
+    fetch-registry : true
+    service-url:
+      defaultZone : http://localhost:8888/eureka/
+
+####### spring配置 ############

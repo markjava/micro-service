@@ -10,7 +10,7 @@
   <version>1.0</version>
   <modules>
     <module>micro-service-registry</module>
-    <module>micro-service-server</module>
+    <module>micro-service-service1</module>
   </modules>
 
   <name>micro-service</name>
